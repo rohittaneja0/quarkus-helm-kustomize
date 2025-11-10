@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "testme.fullname" . }}
+  name: {{ include "testme.fullname" . }}-ro
   labels:
     {{- include "testme.labels" . | nindent 4 }}
 spec:
